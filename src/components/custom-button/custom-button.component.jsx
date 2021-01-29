@@ -1,10 +1,10 @@
-import './custom-button.styles.scss';
+import {AppCustomButton} from './custom-button.styles';
 
-function CustomButton({children, isGoogleSignIn, inverted, ...otherSectionProps}) {
+function CustomButton({children, ...otherSectionProps}) {
   return (
-    <button className={`${isGoogleSignIn ? 'google-sign-in' : ''} ${inverted ? 'inverted' : ''} custom-button`} {...otherSectionProps}>
+    <AppCustomButton {...otherSectionProps}>
       {children}
-    </button>
+    </AppCustomButton>
   )
 }
 
