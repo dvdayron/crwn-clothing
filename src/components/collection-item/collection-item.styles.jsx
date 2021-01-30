@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import {AppCustomButton} from '../custom-button/custom-button.styles';
 
 export const CollectionItemImage = styled.div`

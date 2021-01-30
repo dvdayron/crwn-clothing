@@ -6,6 +6,9 @@ import CollectionItem from '../../components/collection-item/collection-item.com
 
 
 function CollectionPage({collection}) {
+  if(!collection){
+    return (null);
+  }
   const {title, items} = collection;
   return (
     <div className='collection-page'>
